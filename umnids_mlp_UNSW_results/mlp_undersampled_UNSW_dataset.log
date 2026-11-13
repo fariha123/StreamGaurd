@@ -1,0 +1,582 @@
+nohup: ignoring input
+====================================================================================================
+STREAMGUARD: MLP Neural Network Current-Flow Context-Aware Detection
+====================================================================================================
+Loading: /home/ftb22001/UMNIDS_DATA/Project/UM_NIDS/scratch/user/syedwali/Datasets/UNSW_dataset.csv
+Original shape: (454351, 90)
+
+Label distribution:
+label
+Benign            390000
+Exploits           25158
+Fuzzers            18199
+Reconnaissance     11086
+Generic             3861
+DoS                 3642
+Shellcode           1433
+Analysis             426
+Backdoor             340
+Worms                156
+Backdoors             50
+Name: count, dtype: int64
+
+Feature set sizes:
+flow_only 57
+context_only 31
+flow_plus_context 88
+
+Encoded classes:
+0 Analysis
+1 Backdoor
+2 Backdoors
+3 Benign
+4 DoS
+5 Exploits
+6 Fuzzers
+7 Generic
+8 Reconnaissance
+9 Shellcode
+10 Worms
+
+----------------------------------------------------------------------------------------------------
+Preparing experiment: flow_only
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+Training MLP Neural Network model: flow_only
+Train shape: (363480, 57)
+Test shape: (90871, 57)
+====================================================================================================
+Iteration 1, loss = 0.24467288
+Validation score: 0.942418
+Iteration 2, loss = 0.16514991
+Validation score: 0.949736
+Iteration 3, loss = 0.15133620
+Validation score: 0.950314
+Iteration 4, loss = 0.14516865
+Validation score: 0.951607
+Iteration 5, loss = 0.14089307
+Validation score: 0.953753
+Iteration 6, loss = 0.13807018
+Validation score: 0.953698
+Iteration 7, loss = 0.13621127
+Validation score: 0.954358
+Iteration 8, loss = 0.13459986
+Validation score: 0.956284
+Iteration 9, loss = 0.13278259
+Validation score: 0.954798
+Iteration 10, loss = 0.13113274
+Validation score: 0.957192
+Iteration 11, loss = 0.13002614
+Validation score: 0.957192
+Iteration 12, loss = 0.13021102
+Validation score: 0.957329
+Iteration 13, loss = 0.12802427
+Validation score: 0.956504
+Iteration 14, loss = 0.12759372
+Validation score: 0.956366
+Iteration 15, loss = 0.12652037
+Validation score: 0.957247
+Iteration 16, loss = 0.12577695
+Validation score: 0.956779
+Iteration 17, loss = 0.12498466
+Validation score: 0.957357
+Iteration 18, loss = 0.12445631
+Validation score: 0.959062
+Iteration 19, loss = 0.12391066
+Validation score: 0.956779
+Iteration 20, loss = 0.12308222
+Validation score: 0.958842
+Iteration 21, loss = 0.12217398
+Validation score: 0.959365
+Iteration 22, loss = 0.12178253
+Validation score: 0.958320
+Iteration 23, loss = 0.12174954
+Validation score: 0.957137
+Iteration 24, loss = 0.12069278
+Validation score: 0.958567
+Iteration 25, loss = 0.12029271
+Validation score: 0.957192
+Iteration 26, loss = 0.12010004
+Validation score: 0.958402
+Iteration 27, loss = 0.11916342
+Validation score: 0.958842
+Iteration 28, loss = 0.11885669
+Validation score: 0.958705
+Iteration 29, loss = 0.11840112
+Validation score: 0.959310
+Iteration 30, loss = 0.11776915
+Validation score: 0.960025
+Iteration 31, loss = 0.11769650
+Validation score: 0.958787
+Iteration 32, loss = 0.11709175
+Validation score: 0.960438
+Iteration 33, loss = 0.11678847
+Validation score: 0.959558
+Iteration 34, loss = 0.11683380
+Validation score: 0.960053
+Iteration 35, loss = 0.11617353
+Validation score: 0.959007
+Iteration 36, loss = 0.11590746
+Validation score: 0.960218
+Iteration 37, loss = 0.11580358
+Validation score: 0.960053
+Iteration 38, loss = 0.11519941
+Validation score: 0.959805
+Iteration 39, loss = 0.11481915
+Validation score: 0.960135
+Iteration 40, loss = 0.11451702
+Validation score: 0.960163
+Iteration 41, loss = 0.11427463
+Validation score: 0.961071
+Iteration 42, loss = 0.11374077
+Validation score: 0.960108
+Iteration 43, loss = 0.11387828
+Validation score: 0.959503
+Iteration 44, loss = 0.11388063
+Validation score: 0.961043
+Iteration 45, loss = 0.11345923
+Validation score: 0.961181
+Iteration 46, loss = 0.11330110
+Validation score: 0.960713
+Iteration 47, loss = 0.11263773
+Validation score: 0.961126
+Iteration 48, loss = 0.11244281
+Validation score: 0.960686
+Iteration 49, loss = 0.11237445
+Validation score: 0.961401
+Iteration 50, loss = 0.11194240
+Validation score: 0.961456
+Iteration 51, loss = 0.11188514
+Validation score: 0.961401
+Iteration 52, loss = 0.11122902
+Validation score: 0.961759
+Iteration 53, loss = 0.11153954
+Validation score: 0.961346
+Iteration 54, loss = 0.11129218
+Validation score: 0.961566
+Iteration 55, loss = 0.11075784
+Validation score: 0.961593
+Iteration 56, loss = 0.11087669
+Validation score: 0.962061
+Iteration 57, loss = 0.11084887
+Validation score: 0.961401
+Iteration 58, loss = 0.10994902
+Validation score: 0.961896
+Iteration 59, loss = 0.11022379
+Validation score: 0.961869
+Iteration 60, loss = 0.10971895
+Validation score: 0.961896
+Iteration 61, loss = 0.11027717
+Validation score: 0.961428
+Iteration 62, loss = 0.10964357
+Validation score: 0.961869
+Iteration 63, loss = 0.10931999
+Validation score: 0.961731
+Iteration 64, loss = 0.10969293
+Validation score: 0.962419
+Iteration 65, loss = 0.10899318
+Validation score: 0.961511
+Iteration 66, loss = 0.10895157
+Validation score: 0.961786
+Iteration 67, loss = 0.10849005
+Validation score: 0.961676
+Iteration 68, loss = 0.10867218
+Validation score: 0.961428
+Iteration 69, loss = 0.10835547
+Validation score: 0.961126
+Iteration 70, loss = 0.10849126
+Validation score: 0.962254
+Iteration 71, loss = 0.10807803
+Validation score: 0.962419
+Iteration 72, loss = 0.10805434
+Validation score: 0.961759
+Iteration 73, loss = 0.10823914
+Validation score: 0.961621
+Iteration 74, loss = 0.10826635
+Validation score: 0.961126
+Iteration 75, loss = 0.10761881
+Validation score: 0.961814
+Validation score did not improve more than tol=0.000100 for 10 consecutive epochs. Stopping.
+
+Accuracy:              0.9617
+Macro Precision:       0.5984
+Macro Recall:          0.4471
+Macro F1:              0.4720
+Weighted F1:           0.9594
+Training time:         174.5648 sec
+Batch prediction time: 0.3785 sec
+Throughput:            240053.60 flows/sec
+Avg delay:             1.184932 ms/flow
+Median delay:          1.177103 ms/flow
+95th percentile delay: 1.227179 ms/flow
+Max delay:             19.748356 ms/flow
+Saved report:          umnids_mlp_UNSW_results/flow_only_mlp_classification_report.txt
+Saved confusion matrix:umnids_mlp_UNSW_results/flow_only_mlp_confusion_matrix.csv
+
+----------------------------------------------------------------------------------------------------
+Preparing experiment: context_only
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+Training MLP Neural Network model: context_only
+Train shape: (363480, 31)
+Test shape: (90871, 31)
+====================================================================================================
+Iteration 1, loss = 0.24963278
+Validation score: 0.936118
+Iteration 2, loss = 0.18165871
+Validation score: 0.938704
+Iteration 3, loss = 0.17371438
+Validation score: 0.943876
+Iteration 4, loss = 0.16807714
+Validation score: 0.942803
+Iteration 5, loss = 0.16438713
+Validation score: 0.943271
+Iteration 6, loss = 0.16185176
+Validation score: 0.947315
+Iteration 7, loss = 0.15976474
+Validation score: 0.948030
+Iteration 8, loss = 0.15750329
+Validation score: 0.945527
+Iteration 9, loss = 0.15564622
+Validation score: 0.947810
+Iteration 10, loss = 0.15315501
+Validation score: 0.946545
+Iteration 11, loss = 0.15210153
+Validation score: 0.948085
+Iteration 12, loss = 0.15076490
+Validation score: 0.948690
+Iteration 13, loss = 0.14919734
+Validation score: 0.949103
+Iteration 14, loss = 0.14864955
+Validation score: 0.949763
+Iteration 15, loss = 0.14707755
+Validation score: 0.951249
+Iteration 16, loss = 0.14562166
+Validation score: 0.951497
+Iteration 17, loss = 0.14570813
+Validation score: 0.948195
+Iteration 18, loss = 0.14375657
+Validation score: 0.950094
+Iteration 19, loss = 0.14286283/home/ftb22001/nextflow_env/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (100) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+Validation score: 0.950891
+Iteration 20, loss = 0.14223737
+Validation score: 0.951689
+Iteration 21, loss = 0.14144424
+Validation score: 0.950534
+Iteration 22, loss = 0.14064911
+Validation score: 0.950726
+Iteration 23, loss = 0.14006631
+Validation score: 0.952102
+Iteration 24, loss = 0.13906628
+Validation score: 0.951772
+Iteration 25, loss = 0.13884747
+Validation score: 0.950891
+Iteration 26, loss = 0.13828203
+Validation score: 0.953670
+Iteration 27, loss = 0.13748018
+Validation score: 0.952652
+Iteration 28, loss = 0.13684563
+Validation score: 0.954193
+Iteration 29, loss = 0.13648860
+Validation score: 0.953422
+Iteration 30, loss = 0.13625895
+Validation score: 0.951387
+Iteration 31, loss = 0.13545480
+Validation score: 0.954110
+Iteration 32, loss = 0.13446157
+Validation score: 0.954193
+Iteration 33, loss = 0.13475317
+Validation score: 0.952900
+Iteration 34, loss = 0.13395810
+Validation score: 0.952570
+Iteration 35, loss = 0.13385523
+Validation score: 0.953422
+Iteration 36, loss = 0.13312996
+Validation score: 0.953120
+Iteration 37, loss = 0.13329710
+Validation score: 0.954991
+Iteration 38, loss = 0.13247499
+Validation score: 0.953505
+Iteration 39, loss = 0.13232849
+Validation score: 0.953753
+Iteration 40, loss = 0.13138743
+Validation score: 0.952487
+Iteration 41, loss = 0.13155908
+Validation score: 0.953863
+Iteration 42, loss = 0.13088556
+Validation score: 0.955238
+Iteration 43, loss = 0.13075348
+Validation score: 0.954771
+Iteration 44, loss = 0.12968581
+Validation score: 0.952817
+Iteration 45, loss = 0.12983187
+Validation score: 0.955073
+Iteration 46, loss = 0.12991856
+Validation score: 0.954716
+Iteration 47, loss = 0.12896055
+Validation score: 0.955541
+Iteration 48, loss = 0.12932873
+Validation score: 0.956146
+Iteration 49, loss = 0.12917092
+Validation score: 0.955266
+Iteration 50, loss = 0.12831144
+Validation score: 0.954908
+Iteration 51, loss = 0.12848622
+Validation score: 0.953698
+Iteration 52, loss = 0.12838553
+Validation score: 0.955678
+Iteration 53, loss = 0.12797206
+Validation score: 0.956091
+Iteration 54, loss = 0.12698561
+Validation score: 0.954853
+Iteration 55, loss = 0.12698836
+Validation score: 0.955238
+Iteration 56, loss = 0.12649696
+Validation score: 0.955266
+Iteration 57, loss = 0.12675271
+Validation score: 0.956256
+Iteration 58, loss = 0.12670524
+Validation score: 0.955926
+Iteration 59, loss = 0.12612913
+Validation score: 0.953560
+Iteration 60, loss = 0.12612386
+Validation score: 0.953698
+Iteration 61, loss = 0.12600054
+Validation score: 0.956559
+Iteration 62, loss = 0.12593993
+Validation score: 0.956311
+Iteration 63, loss = 0.12530128
+Validation score: 0.956394
+Iteration 64, loss = 0.12497357
+Validation score: 0.956091
+Iteration 65, loss = 0.12454986
+Validation score: 0.956284
+Iteration 66, loss = 0.12474205
+Validation score: 0.956724
+Iteration 67, loss = 0.12439785
+Validation score: 0.954165
+Iteration 68, loss = 0.12455016
+Validation score: 0.954330
+Iteration 69, loss = 0.12427153
+Validation score: 0.956256
+Iteration 70, loss = 0.12394875
+Validation score: 0.955568
+Iteration 71, loss = 0.12388769
+Validation score: 0.955266
+Iteration 72, loss = 0.12315496
+Validation score: 0.955596
+Iteration 73, loss = 0.12327447
+Validation score: 0.956641
+Iteration 74, loss = 0.12293437
+Validation score: 0.956394
+Iteration 75, loss = 0.12295662
+Validation score: 0.955431
+Iteration 76, loss = 0.12307854
+Validation score: 0.957219
+Iteration 77, loss = 0.12283109
+Validation score: 0.956174
+Iteration 78, loss = 0.12260567
+Validation score: 0.956751
+Iteration 79, loss = 0.12252558
+Validation score: 0.956779
+Iteration 80, loss = 0.12217234
+Validation score: 0.956339
+Iteration 81, loss = 0.12188824
+Validation score: 0.956394
+Iteration 82, loss = 0.12180339
+Validation score: 0.957604
+Iteration 83, loss = 0.12164788
+Validation score: 0.955981
+Iteration 84, loss = 0.12133410
+Validation score: 0.957962
+Iteration 85, loss = 0.12145979
+Validation score: 0.954193
+Iteration 86, loss = 0.12118857
+Validation score: 0.957687
+Iteration 87, loss = 0.12124440
+Validation score: 0.955431
+Iteration 88, loss = 0.12089673
+Validation score: 0.956366
+Iteration 89, loss = 0.12025921
+Validation score: 0.956889
+Iteration 90, loss = 0.12073766
+Validation score: 0.955761
+Iteration 91, loss = 0.12035931
+Validation score: 0.955954
+Iteration 92, loss = 0.12074828
+Validation score: 0.956064
+Iteration 93, loss = 0.12057695
+Validation score: 0.956366
+Iteration 94, loss = 0.11999231
+Validation score: 0.958155
+Iteration 95, loss = 0.12058078
+Validation score: 0.956559
+Iteration 96, loss = 0.11983151
+Validation score: 0.958512
+Iteration 97, loss = 0.11928673
+Validation score: 0.957852
+Iteration 98, loss = 0.11979089
+Validation score: 0.956449
+Iteration 99, loss = 0.11911609
+Validation score: 0.957522
+Iteration 100, loss = 0.11935262
+Validation score: 0.957109
+
+Accuracy:              0.9580
+Macro Precision:       0.4067
+Macro Recall:          0.3909
+Macro F1:              0.3772
+Weighted F1:           0.9506
+Training time:         290.0529 sec
+Batch prediction time: 0.4230 sec
+Throughput:            214807.78 flows/sec
+Avg delay:             1.527708 ms/flow
+Median delay:          1.087895 ms/flow
+95th percentile delay: 1.125065 ms/flow
+Max delay:             79.120464 ms/flow
+Saved report:          umnids_mlp_UNSW_results/context_only_mlp_classification_report.txt
+Saved confusion matrix:umnids_mlp_UNSW_results/context_only_mlp_confusion_matrix.csv
+
+----------------------------------------------------------------------------------------------------
+Preparing experiment: flow_plus_context
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+Training MLP Neural Network model: flow_plus_context
+Train shape: (363480, 88)
+Test shape: (90871, 88)
+====================================================================================================
+Iteration 1, loss = 0.20204994
+Validation score: 0.952074
+Iteration 2, loss = 0.13851633
+Validation score: 0.956009
+Iteration 3, loss = 0.12610251
+Validation score: 0.960163
+Iteration 4, loss = 0.11694033
+Validation score: 0.961951
+Iteration 5, loss = 0.11095357
+Validation score: 0.963849
+Iteration 6, loss = 0.10703470
+Validation score: 0.964647
+Iteration 7, loss = 0.10388617
+Validation score: 0.965775
+Iteration 8, loss = 0.10109249
+Validation score: 0.965748
+Iteration 9, loss = 0.09908032
+Validation score: 0.967536
+Iteration 10, loss = 0.09733004
+Validation score: 0.966270
+Iteration 11, loss = 0.09601456
+Validation score: 0.967619
+Iteration 12, loss = 0.09503971
+Validation score: 0.966601
+Iteration 13, loss = 0.09299504
+Validation score: 0.966848
+Iteration 14, loss = 0.09240027
+Validation score: 0.968086
+Iteration 15, loss = 0.09161225
+Validation score: 0.967894
+Iteration 16, loss = 0.09110573
+Validation score: 0.968912
+Iteration 17, loss = 0.08931786
+Validation score: 0.966986
+Iteration 18, loss = 0.08932450
+Validation score: 0.968059
+Iteration 19, loss = 0.08806785
+Validation score: 0.968169
+Iteration 20, loss = 0.08748337
+Validation score: 0.969379
+Iteration 21, loss = 0.08672968
+Validation score: 0.967398
+Iteration 22, loss = 0.08596727
+Validation score: 0.969159
+Iteration 23, loss = 0.08564049
+Validation score: 0.969627
+Iteration 24, loss = 0.08477456
+Validation score: 0.969434
+Iteration 25, loss = 0.08392869
+Validation score: 0.969132
+Iteration 26, loss = 0.08391725
+Validation score: 0.970067
+Iteration 27, loss = 0.08350894
+Validation score: 0.969764
+Iteration 28, loss = 0.08284624
+Validation score: 0.969737
+Iteration 29, loss = 0.08298979
+Validation score: 0.969930
+Iteration 30, loss = 0.08204974
+Validation score: 0.969985
+Iteration 31, loss = 0.08166390
+Validation score: 0.969682
+Iteration 32, loss = 0.08132494
+Validation score: 0.969517
+Iteration 33, loss = 0.08122356
+Validation score: 0.969297
+Iteration 34, loss = 0.08009513
+Validation score: 0.969875
+Iteration 35, loss = 0.07987517
+Validation score: 0.969737
+Iteration 36, loss = 0.07966404
+Validation score: 0.970342
+Iteration 37, loss = 0.07972337
+Validation score: 0.970260
+Iteration 38, loss = 0.07864958
+Validation score: 0.970562
+Iteration 39, loss = 0.07839560
+Validation score: 0.970040
+Iteration 40, loss = 0.07811011
+Validation score: 0.970452
+Iteration 41, loss = 0.07793486
+Validation score: 0.971113
+Iteration 42, loss = 0.07757155
+Validation score: 0.969847
+Iteration 43, loss = 0.07692179
+Validation score: 0.970342
+Iteration 44, loss = 0.07677355
+Validation score: 0.970287
+Iteration 45, loss = 0.07689924
+Validation score: 0.970645
+Iteration 46, loss = 0.07632148
+Validation score: 0.970727
+Iteration 47, loss = 0.07572273
+Validation score: 0.970122
+Iteration 48, loss = 0.07507320
+Validation score: 0.970342
+Iteration 49, loss = 0.07534977
+Validation score: 0.970370
+Iteration 50, loss = 0.07482958
+Validation score: 0.969462
+Iteration 51, loss = 0.07452242
+Validation score: 0.971140
+Iteration 52, loss = 0.07443965
+Validation score: 0.970205
+Validation score did not improve more than tol=0.000100 for 10 consecutive epochs. Stopping.
+
+Accuracy:              0.9703
+Macro Precision:       0.5812
+Macro Recall:          0.5157
+Macro F1:              0.5268
+Weighted F1:           0.9673
+Training time:         14813.1470 sec
+Batch prediction time: 0.2886 sec
+Throughput:            314821.26 flows/sec
+Avg delay:             1.289247 ms/flow
+Median delay:          1.272135 ms/flow
+95th percentile delay: 1.283857 ms/flow
+Max delay:             26.268444 ms/flow
+Saved report:          umnids_mlp_UNSW_results/flow_plus_context_mlp_classification_report.txt
+Saved confusion matrix:umnids_mlp_UNSW_results/flow_plus_context_mlp_confusion_matrix.csv
+
+====================================================================================================
+Final comparison:
+====================================================================================================
+       experiment     algorithm  n_features  accuracy  macro_f1  weighted_f1  train_time_sec  prediction_time_sec  throughput_flows_per_sec  avg_detection_delay_ms  p95_detection_delay_ms
+        flow_only MLPClassifier          57  0.961726  0.472044     0.959361      174.564763             0.378545             240053.601269                1.184932                1.227179
+     context_only MLPClassifier          31  0.957951  0.377155     0.950604      290.052930             0.423034             214807.778519                1.527708                1.125065
+flow_plus_context MLPClassifier          88  0.970288  0.526757     0.967309    14813.147044             0.288643             314821.262692                1.289247                1.283857
+
+Saved results to: umnids_mlp_UNSW_results/umnids_mlp_results_with_system_metrics.csv
